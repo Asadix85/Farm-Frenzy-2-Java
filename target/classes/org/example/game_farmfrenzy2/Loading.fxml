@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" prefHeight="768" prefWidth="1024" style="-fx-background-color: #1a2f23;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.game_farmfrenzy2.view.LoadingView">
+
+    <VBox alignment="CENTER" spacing="28">
+      <ImageView fitHeight="295.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Logo.png" />
+         </image>
+      </ImageView>
+
+        <Label fx:id="statusLabel" style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;" text="Loading..." />
+
+        <ProgressBar fx:id="progressBar" prefWidth="360" progress="0" style="-fx-accent: #27ae60;" />
+      <Label layoutX="488.0" layoutY="492.0" text="Design by ASADIX">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.526515164158561">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.7956852912902832" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8997461795806885" green="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+    </VBox>
+</StackPane>

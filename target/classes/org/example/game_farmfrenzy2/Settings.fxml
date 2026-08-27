@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.game_farmfrenzy2.view.SettingsView">
+
+    <VBox alignment="CENTER" maxWidth="480" spacing="22" style="-fx-background-color: rgba(30, 50, 40, 0.85); -fx-background-radius: 20; -fx-padding: 45 55 45 55; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 18, 0.3, 0, 6);">
+
+        <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #f1c40f;" text="SETTINGS" />
+
+        <VBox alignment="CENTER_LEFT" maxWidth="360" spacing="12">
+            <Label style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="Music Volume" />
+            <Slider fx:id="musicSlider" majorTickUnit="25" max="100" min="0" prefWidth="360" showTickLabels="true" showTickMarks="true" value="80" />
+
+            <Label style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="Sound Effects Volume" />
+            <Slider fx:id="soundSlider" majorTickUnit="25" max="100" min="0" prefWidth="360" showTickLabels="true" showTickMarks="true" value="80" />
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="18">
+            <Button onAction="#onSave" prefHeight="44" prefWidth="140" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Save" />
+            <Button onAction="#onBack" prefHeight="44" prefWidth="140" style="-fx-background-color: #7f8c8d; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Back" />
+        </HBox>
+    </VBox>
+</StackPane>

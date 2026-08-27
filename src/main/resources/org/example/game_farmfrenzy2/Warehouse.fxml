@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root"
+           xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="org.example.game_farmfrenzy2.view.WarehouseView"
+           prefWidth="1024" prefHeight="768">
+
+    <VBox alignment="CENTER" spacing="20" maxWidth="560"
+          style="-fx-background-color: rgba(30, 50, 40, 0.88); -fx-background-radius: 22; -fx-padding: 40 50 40 50; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 20, 0.3, 0, 8);">
+
+        <Label text="WAREHOUSE"
+               style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #f1c40f;"/>
+
+        <HBox spacing="24" alignment="CENTER"
+              style="-fx-background-color: rgba(0,0,0,0.25); -fx-background-radius: 10; -fx-padding: 12 20;">
+            <Label text="Coins:"
+                   style="-fx-text-fill: white; -fx-font-size: 16px;"/>
+            <Label fx:id="coinLabel" text="0"
+                   style="-fx-text-fill: #f1c40f; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <Label text="|"
+                   style="-fx-text-fill: #7f8c8d; -fx-font-size: 16px;"/>
+            <Label text="Capacity:"
+                   style="-fx-text-fill: white; -fx-font-size: 16px;"/>
+            <Label fx:id="capacityLabel" text="0/20"
+                   style="-fx-text-fill: #3498db; -fx-font-size: 18px; -fx-font-weight: bold;"/>
+        </HBox>
+
+        <ListView fx:id="productList" prefHeight="320" prefWidth="460"
+                  style="-fx-background-color: rgba(44, 62, 80, 0.9); -fx-control-inner-background: #2c3e50; -fx-background-radius: 10; -fx-border-color: #1abc9c; -fx-border-radius: 10; -fx-border-width: 1.5;"/>
+
+        <HBox spacing="16" alignment="CENTER">
+            <Button onAction="#onSellSelected" text="Sell Selected" prefWidth="160" prefHeight="44"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;"/>
+            <Button onAction="#onSendVehicle" text="Send by Vehicle" prefWidth="170" prefHeight="44"
+                    style="-fx-background-color: #e67e22; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10;"/>
+            <Button onAction="#onBack" text="Back to Game" prefWidth="160" prefHeight="44"
+                    style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;"/>
+        </HBox>
+    </VBox>
+</StackPane>

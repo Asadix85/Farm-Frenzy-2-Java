@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.game_farmfrenzy2.view.LevelSelectView">
+
+    <VBox alignment="CENTER" maxWidth="700" spacing="28" style="-fx-background-color: rgba(30, 50, 40, 0.80); -fx-background-radius: 20; -fx-padding: 40 50 40 50; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 18, 0.3, 0, 6);">
+
+        <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #f1c40f;" text="SELECT LEVEL" />
+
+        <FlowPane alignment="CENTER" hgap="18" prefWrapLength="520" vgap="18">
+            <Button fx:id="level1Btn" onAction="#onLevel1" prefHeight="70" prefWidth="140" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Level 1" />
+            <Button fx:id="level2Btn" onAction="#onLevel2" prefHeight="70" prefWidth="140" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Level 2" />
+            <Button fx:id="level3Btn" disable="true" onAction="#onLevel3" prefHeight="70" prefWidth="140" style="-fx-background-color: #7f8c8d; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Level 3" />
+            <Button fx:id="level4Btn" disable="true" onAction="#onLevel4" prefHeight="70" prefWidth="140" style="-fx-background-color: #7f8c8d; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Level 4" />
+            <Button fx:id="level5Btn" disable="true" onAction="#onLevel5" prefHeight="70" prefWidth="140" style="-fx-background-color: #7f8c8d; -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Level 5" />
+         <Button fx:id="level6Btn" disable="true" layoutX="319.0" layoutY="99.0" onAction="#onLevel6" prefHeight="70" prefWidth="140" style="-fx-background-color: #7f8c8d; -fx-font-size: 18px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Level 6" textFill="#fff600" />
+        </FlowPane>
+
+        <HBox alignment="CENTER" spacing="20">
+            <Button onAction="#onShop" prefHeight="44" prefWidth="150" style="-fx-background-color: #9b59b6; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Shop" />
+            <Button onAction="#onBack" prefHeight="44" prefWidth="150" style="-fx-background-color: #e67e22; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Menu" />
+        </HBox>
+    </VBox>
+</StackPane>

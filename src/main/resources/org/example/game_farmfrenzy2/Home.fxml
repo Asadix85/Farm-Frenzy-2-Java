@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.game_farmfrenzy2.view.HomeView">
+
+    <VBox alignment="CENTER" maxWidth="460" spacing="22" style="-fx-background-color: rgba(30, 50, 40, 0.82); -fx-background-radius: 20; -fx-padding: 45 55 45 55; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 18, 0.3, 0, 6);">
+
+        <Label style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #f1c40f;" text="FARM FRENZY 2" />
+
+        <Label fx:id="welcomeLabel" style="-fx-font-size: 18px; -fx-text-fill: #ecf0f1;" text="Welcome!" />
+
+        <VBox alignment="CENTER" spacing="14">
+            <Button onAction="#onStart" prefHeight="48" prefWidth="220" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Career Mode" />
+            <Button onAction="#onSettings" prefHeight="48" prefWidth="220" style="-fx-background-color: #e67e22; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Settings" />
+            <Button onAction="#onExit" prefHeight="48" prefWidth="220" style="-fx-background-color: #c0392b; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 12; -fx-cursor: hand;" text="Exit" />
+        </VBox>
+    </VBox>
+</StackPane>
