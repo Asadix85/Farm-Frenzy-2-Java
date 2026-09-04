@@ -115,10 +115,10 @@ Mahtab Dehbashi
 
 (Project designers – Advanced Programming course, University of Isfahan)
 
-📜 License
+### 📜 License
 This project is developed for educational purposes only as part of the Advanced Programming course at the University of Isfahan.
 
-🙌 Acknowledgments
+### 🙌 Acknowledgments
 Special thanks to Dr. Ramezani and the TA team for their guidance throughout the course.
 
 ⭐ If you find this project useful, don't forget to give it a star on GitHub!
