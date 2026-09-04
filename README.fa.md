@@ -1,5 +1,5 @@
 
-<div dir="rtl" align="center">
+<div dir="rtl" align="right">
 
 <p align="center">
   <a href="README.md"><img src="https://img.shields.io/badge/🇬🇧-English-blue?style=for-the-badge" alt="English"></a>
@@ -87,7 +87,7 @@
 تنظیم اطلاعات اتصال دیتابیس در application.properties.
 
 اجرای Main.java (MVC)
-
+```text
 src/main/java/com/example/farm/
 ├── model/               // موجودیت‌ها (حیوان، محصول، ماشین، ...)
 │   ├── animal/
@@ -100,6 +100,7 @@ src/main/java/com/example/farm/
 ├── exception/           // استثناهای اختصاصی
 ├── util/                // ابزارهای کمکی
 └── Main.java            // نقطه ورود برنامه
+```
 ## 👥 تیم توسعه‌دهندگان (طراحان پروژه)
 
 امیرحسین کریمی زارچی
@@ -114,10 +115,10 @@ src/main/java/com/example/farm/
 
 (طراحان پروژه – درس برنامه‌سازی پیشرفته، دانشگاه اصفهان)
 
-## 📜 مجوز
+### 📜 مجوز
 این پروژه صرفاً برای اهداف آموزشی و در چارچوب درس برنامه‌سازی پیشرفته دانشگاه اصفهان توسعه داده شده است.
 
-## تشکر و قدردانی
+### تشکر و قدردانی
 تشکر ویژه از دکتر رمضانی و تیم  TA بابت راهنمایی‌های ارزشمندشان در طول ترم.
 
 ⭐ اگر این پروژه برایتان مفید بود، فراموش نکنید که به آن ستاره بدهید!
