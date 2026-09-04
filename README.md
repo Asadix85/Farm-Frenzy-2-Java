@@ -86,7 +86,7 @@ Update application.properties with your MySQL credentials.
 Run Main.java to launch the game.
 
 ## 🧱 Project Structure (MVC)
-
+```text
 src/main/java/com/example/farm/
 ├── model/               // Entities (Animal, Product, Machine, ...)
 │   ├── animal/
@@ -99,7 +99,7 @@ src/main/java/com/example/farm/
 ├── exception/           // Custom exceptions
 ├── util/                // Helpers (validation, threading)
 └── Main.java            // Entry point
-
+```
 
 ## 👥 Development Team
 
